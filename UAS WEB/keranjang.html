@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Wijaya Store</title>
+        <title>Wijaya Store - Keranjang Belanja</title>
         <link href="keranjang.css" rel="stylesheet">
         <link rel="shortcut icon" href="C:\Users\Elvia\Documents\Term4 UPH\Aplikasi Berbasis Web I\03082200020_Latihan6\brand.png">
     </head>
@@ -18,47 +18,32 @@
                 </div>
                 <div class="about">
                     <h1 class="title">Jam Tangan </h1>
-                    <h2 class="subtitle">Rp 80.000</h2>
+                    <h2 id="subtitle">Rp.80.000</h2>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14zyYxsB4PHEhqKZmpEyFmxSkxI2QO6DeM0GzOAnwjH1kiURdFx0l4F07olA_O0cpJWQ&amp;usqp=CAU" width="20" height="20" alt="">
                     <br><br><br><br><br><br>
                     <h2 class="sub">Tulis Catatan</h2>
                 </div>
                 <div class="counter">
-                    <div class="btn">+</div>
-                    <div class="count">2</div>
-                    <div class="btn">-</div>
+                    <div class="plusminus">
+                        <button onclick="plus()">+</button>
+                    </div>
+                    <div class="value">
+                        <p id="count">1</p>
+                    </div>
+                    <div class="plusminus">
+                        <button onclick="minus()">-</button>
+                    </div>
                 </div>
-                <div class="prices"><br><br>
-                    <div class="amount"> Rp 160.000</div>
+                
+                <div class="price">
+                    <h2>Rp.<span id="price">80.000</span></h2>
                     <div class="remove"><u>Hapus</u></div>
                 </div>
             </div>
-            <br>
-            <div class="Items">
-                <input type="checkbox">
-                <div class="image-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWU3wlM7iPClqRK5KpKhtN5WKM5ngp3ReAgaq3AGxor9BD34XOS8G6BlUJrHL4Z4b1d0&usqp=CAU" weight="200px" height="200px" alt="">
-                </div>
-                <div class="about">
-                    <h1 class="title">Charger </h1>
-                    <h2 class="subtitle">Rp 110.000</h2>
-                    <img src="http://www.clker.com/cliparts/w/s/M/d/S/T/light-pink-circle-hi.png" width="20" height="20" alt="">
-                    <br><br><br><br><br><br>
-                    <h2 class="sub">Tulis Catatan</h2>
-                </div>
-                <div class="counter">
-                    <div class="btn">+</div>
-                    <div class="count">4</div>
-                    <div class="btn">-</div>
-                </div>
-                <div class="prices"><br><br>
-                    <div class="amount"> Rp 440.000</div>
-                    <div class="remove"><u>Hapus</u></div>
-                </div>
-
-            </div><br><br>
+            <br><br><br>   
             <a href="chart.html" target="_blank"><button class="button">Beli</button></a>
         </div>
-            </div>
+
+        <script src="LayarProdukJS.js"></script>
     </body>
 </html>

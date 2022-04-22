@@ -151,8 +151,8 @@ body{
 }
 
 .button{
-    margin: 5px;
-    width: 98%;
+    margin: 58px;
+    width: 88%;
     height: 35px;
     border: none;
     background: #f8b6c6;
@@ -162,7 +162,8 @@ body{
     font-family: Verdana;
     font-weight: 500;
     color: #333;
-    position: right;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:hover{
