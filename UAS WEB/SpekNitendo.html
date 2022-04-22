@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial scale-1.0">
+        <link rel="icon" href="gedreht-pond5-logo.png">
+        <style>.glow {
+            font-size: 35px;
+            color: rgb(255, 68, 140);
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes glow {
+            from {
+              text-shadow: 0 0 10px rgb(255, 233, 233), 0 0 20px rgb(255, 218, 218), 0 0 30px #ffc0e0;
+            }
+            to {
+              text-shadow: 0 0 20px rgb(252, 219, 219), 0 0 30px #ffa6d3, 0 0 40px #ffd6ea;
+            }
+        }</style>
+        <link rel="stylesheet" href="styleSpek.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <title>Deskripsi Produk - Wijaya Store</title>
+    </head>
+
+    <body>
+        
+        <div class="background">
+            <div class="big-title">
+                <h1 class='glow'>Deskripsi Produk</h1><br><br>
+            </div>
+            <div class="Items">
+                <div class="wrap"><br><br><br><br><br><br><br>
+                    <img src="https://i.pinimg.com/736x/e0/97/0e/e0970e5214260ed11fd12d4698323f7a--most-beautiful-images-nintendo.jpg" width="300px" height="300px" alt="" class="rounded-corners">
+                </div>
+                <div class="product">
+                    <h2 class='title'>Nitendo</h2>
+                    <p class='description'>Sisa produk: 928 | Rp 425.000</p>
+                    <h3 class='description'>𝐍𝐄𝐖 𝐀𝐑𝐑𝐈𝐕𝐀𝐋!</h3>
+                    <p class='description'>- 1 Unit CONSOLE NEW Nintendo 3DS LL XL REFURBISH
+                        karena nintendo 3ds xl udh gak predusi baru lagi
+                        - 1 Unit Mc 128gb + Games
+                        
+                        -1 Unit Cabel Cassan
+                        
+                        - DAN DUS BOX
+                        
+                        - GARANSI SERVIS 1 TAHUN</p>
+                    <a href="index.html" class="description">Kembali ke halaman utama</a>
+                </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br>
+            <button class="button">Masukkan ke keranjang</button>
+        </div>
+        
+        <div class="bg-ws">
+            <div class="ws-content">
+                <div class="Items">
+                    <div class="wrap"><br><br><br><br><br><br><br><br><br><br><br>
+                        <img src="https://i.pinimg.com/736x/e0/97/0e/e0970e5214260ed11fd12d4698323f7a--most-beautiful-images-nintendo.jpg" alt="" class="keranjang">
+                    </div>
+                    <div class="product"><br><br>
+                        <p class="title1">Masukkan ke Keranjang</p>
+                        <form class="description">Masukkan nominal:   <input type="number" size=100 style="width: 50px; height: 35px;"></form>
+                    </div>
+                    <div class="close">+</div><br><br>
+                </div><br><br><br><br><br><br><br>
+                <button class="button1">Tambah ke keranjang</button>
+            </div>
+        </div>
+
+        <div class="messagealert hide">
+            <span class="message">Berhasil ditambahkan ke keranjang!</span>
+            <span class="close1">x</span>
+        </div>
+        
+        <script>
+            document.querySelector("button").addEventListener("click", function() {
+            document.querySelector(".bg-ws").style.display = "flex";
+            });
+
+            document.querySelector(".close").addEventListener("click", function() {
+            document.querySelector(".bg-ws").style.display = "none";
+            });
+
+            $('.button1').click(function(){
+            $('.messagealert').addClass("show");
+            $('.messagealert').removeClass("hide");
+            $('.messagealert').addClass("showAlert");
+            setTimeout(function(){
+            $('.messagealert').removeClass("show");
+            $('.messagealert').addClass("hide");
+            },5000);
+            });
+
+            $('.close1').click(function(){
+            $('.messagealert').removeClass("show");
+            $('.messagealert').addClass("hide");
+            });
+        </script>
+    </body>
+</html>
